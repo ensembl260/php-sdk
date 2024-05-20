@@ -4,7 +4,7 @@ Official PHP SDK for [ma-residence](https://www.ma-residence.fr)'s API.
 
 ## Get started
 
-To use [ma-residence's API](https://github.com/ma-residence/api), you have to register your application.
+To use [ma-residence's API](https://github.com/ensembl260/api), you have to register your application.
 When registering your application, you will obtain a ***client_id*** and ***client_secret***.
 The ***client_id*** and ***client_secret*** will be necessary to use the API.
 
