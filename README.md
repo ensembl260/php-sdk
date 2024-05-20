@@ -38,7 +38,7 @@ docker run -it --name docker-php-sdk --rm -v "$PWD/php-sdk:/user/src/php-sdk" -w
 
 use MR\SDK\Client;
 
-$host = 'https://api.ensembl.fr/';
+$host = 'https://api.ensembl.sbs/';
 $clientId = 'CLIENT_ID';
 $clientSecret = 'CLIENT_SECRET';
 
