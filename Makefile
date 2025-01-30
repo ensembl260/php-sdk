@@ -1,10 +1,10 @@
 DOCKER =
 
 composer/install: ## Launch composer install
-	@$(DOCKER) php -d memory_limit=-1 /usr/local/bin/composer install --no-interaction --no-scripts
+	@$(DOCKER) php -d memory_limit=-1 ./bin/composer.phar install --no-interaction --no-scripts
 
 composer/update: ## Launch composer update
-	@$(DOCKER) php -d memory_limit=-1 /usr/local/bin/composer update --no-interaction --no-scripts
+	@$(DOCKER) php -d memory_limit=-1 ./bin/composer.phar update --no-interaction --no-scripts
 
 cs/dry-run: ## Run PHPCS with dry-run option
 	@$(DOCKER) ./bin/php-cs-fixer-v3.phar fix src --dry-run --verbose --diff
