@@ -1,11 +1,11 @@
 <?php
 
-namespace MR\SDK\Transport;
+namespace Ensembl260\SDK\Transport;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\HandlerStack;
-use MR\SDK\Client;
+use Ensembl260\SDK\Client;
 
 class Request
 {

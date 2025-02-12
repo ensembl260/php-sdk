@@ -1,6 +1,6 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
 class MarketEndpoint extends Endpoint implements ResourceEndpointInterface, SettingsEndpointInterface
 {

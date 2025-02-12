@@ -1,6 +1,6 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
 class CommentEndpoint extends Endpoint implements ResourceEndpointInterface
 {

@@ -1,10 +1,10 @@
 # php-sdk
 
-Official PHP SDK for [ma-residence](https://www.ma-residence.fr)'s API.
+Official PHP SDK for [ensembl260](https://www.ensembl260.fr)'s API.
 
 ## Get started
 
-To use [ma-residence's API](https://github.com/ensembl260/api), you have to register your application.
+To use [ensembl260's API](https://github.com/ensembl260/api), you have to register your application.
 When registering your application, you will obtain a ***client_id*** and ***client_secret***.
 The ***client_id*** and ***client_secret*** will be necessary to use the API.
 
@@ -15,12 +15,12 @@ Edit your `composer.json` :
 ```json
 {
     "require": {
-        "ma-residence/php-sdk": "2.0.*"
+        "ensembl260/php-sdk": "2.0.*"
     },
     "repositories": [
         {
             "type": "vcs",
-            "url":  "https://github.comma-residence/php-sdk.git",
+            "url":  "https://github.com/ensembl260/php-sdk.git",
             "no-api": true
         }
     ]
@@ -36,7 +36,7 @@ docker run -it --name docker-php-sdk --rm -v "$PWD/php-sdk:/user/src/php-sdk" -w
 ```php
 <?php
 
-use MR\SDK\Client;
+use Ensembl260\SDK\Client;
 
 $host = 'https://api.ensembl.sbs/';
 $clientId = 'CLIENT_ID';
@@ -58,7 +58,7 @@ $mrClient = new Client($host, $clientId, $clientSecret, $storage);
 After you have initialized the class, you can login with an email and password:
 
 ```php
-$mrClient->auth()->loginWithCredentials('developpeur@ma-residence.fr', 'password');
+$mrClient->auth()->loginWithCredentials('developpeur@ensembl260.fr', 'password');
 ```
 
 Or with an external token:

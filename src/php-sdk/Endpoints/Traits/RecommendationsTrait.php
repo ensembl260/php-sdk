@@ -1,8 +1,8 @@
 <?php
 
-namespace MR\SDK\Endpoints\Traits;
+namespace Ensembl260\SDK\Endpoints\Traits;
 
-use MR\SDK\Transport\Response;
+use Ensembl260\SDK\Transport\Response;
 
 trait RecommendationsTrait
 {

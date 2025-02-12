@@ -1,6 +1,6 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
 class DemandEndpoint extends Endpoint implements ResourceEndpointInterface
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace MR\SDK\Auth;
+namespace Ensembl260\SDK\Auth;
 
-use MR\SDK\Client;
-use MR\SDK\Exceptions\OAuthException;
-use MR\SDK\Exceptions\RequestException;
-use MR\SDK\TokenStorage\InMemoryTokenStorage;
-use MR\SDK\TokenStorage\TokenStorageInterface;
+use Ensembl260\SDK\Client;
+use Ensembl260\SDK\Exceptions\OAuthException;
+use Ensembl260\SDK\Exceptions\RequestException;
+use Ensembl260\SDK\TokenStorage\InMemoryTokenStorage;
+use Ensembl260\SDK\TokenStorage\TokenStorageInterface;
 use Psr\Log\LoggerInterface;
 
 class OAuth

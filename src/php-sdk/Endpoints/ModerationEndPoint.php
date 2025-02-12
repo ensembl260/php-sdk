@@ -1,14 +1,14 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
-use MR\SDK\Transport\Response;
+use Ensembl260\SDK\Transport\Response;
 
 class ModerationEndPoint extends Endpoint
 {
     public function patch(string $type, array $data): Response
     {
-        return $this->request->patch('/moderation/'.$type, [], $data);
+        return $this->request->patch('/moderation/' . $type, [], $data);
     }
 
     public static function getBaseUri(): string

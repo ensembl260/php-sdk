@@ -1,8 +1,8 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
-use MR\SDK\Transport\Response;
+use Ensembl260\SDK\Transport\Response;
 
 class EventEndpoint extends Endpoint implements ResourceEndpointInterface
 {

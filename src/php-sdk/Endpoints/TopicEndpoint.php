@@ -1,6 +1,6 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
 class TopicEndpoint extends Endpoint
 {
@@ -9,7 +9,7 @@ class TopicEndpoint extends Endpoint
     /**
      * @param array $extraParams
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function all(array $extraParams = [])
     {
@@ -19,11 +19,11 @@ class TopicEndpoint extends Endpoint
     /**
      * @param string $id
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function get($id)
     {
-        return $this->request->get('/topics/'.$id);
+        return $this->request->get('/topics/' . $id);
     }
 
     public static function getBaseUri(): string

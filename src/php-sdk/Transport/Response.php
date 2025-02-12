@@ -1,6 +1,6 @@
 <?php
 
-namespace MR\SDK\Transport;
+namespace Ensembl260\SDK\Transport;
 
 use GuzzleHttp\Psr7\Response as Psr7Response;
 use GuzzleHttp\Utils;

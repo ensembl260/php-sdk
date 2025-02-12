@@ -1,6 +1,6 @@
 <?php
 
-namespace MR\SDK\TokenStorage;
+namespace Ensembl260\SDK\TokenStorage;
 
 class FileTokenStorage implements TokenStorageInterface
 {

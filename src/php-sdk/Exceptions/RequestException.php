@@ -1,6 +1,6 @@
 <?php
 
-namespace MR\SDK\Exceptions;
+namespace Ensembl260\SDK\Exceptions;
 
 class RequestException extends \RuntimeException
 {

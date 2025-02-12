@@ -1,9 +1,9 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
-use MR\SDK\Endpoints\Traits\EndpointTrait;
-use MR\SDK\Transport\Request;
+use Ensembl260\SDK\Endpoints\Traits\EndpointTrait;
+use Ensembl260\SDK\Transport\Request;
 
 abstract class Endpoint
 {

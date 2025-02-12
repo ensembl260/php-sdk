@@ -1,8 +1,8 @@
 <?php
 
-namespace MR\SDK\Exceptions;
+namespace Ensembl260\SDK\Exceptions;
 
-use MR\SDK\Transport\Response;
+use Ensembl260\SDK\Transport\Response;
 
 class OAuthException extends \Exception
 {

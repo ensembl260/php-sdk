@@ -1,9 +1,9 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
-use MR\SDK\Endpoints\Traits\ListTrait;
-use MR\SDK\Transport\Response;
+use Ensembl260\SDK\Endpoints\Traits\ListTrait;
+use Ensembl260\SDK\Transport\Response;
 
 class FeatureEndpoint extends Endpoint
 {

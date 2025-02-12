@@ -1,12 +1,12 @@
 <?php
 
-namespace MR\SDK;
+namespace Ensembl260\SDK;
 
 use GuzzleHttp\HandlerStack;
-use MR\SDK\Auth\OAuth;
-use MR\SDK\Endpoints\Endpoint;
-use MR\SDK\TokenStorage\TokenStorageInterface;
-use MR\SDK\Transport\Request;
+use Ensembl260\SDK\Auth\OAuth;
+use Ensembl260\SDK\Endpoints\Endpoint;
+use Ensembl260\SDK\TokenStorage\TokenStorageInterface;
+use Ensembl260\SDK\Transport\Request;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
@@ -301,7 +301,7 @@ class Client
 
         $toCamelCase = function ($name) {
             return lcfirst(preg_replace_callback('/(^|_|\.)+(.)/', function ($match) {
-                return ('.' === $match[1] ? '_' : '').strtoupper($match[2]);
+                return ('.' === $match[1] ? '_' : '') . strtoupper($match[2]);
             }, $name));
         };
 

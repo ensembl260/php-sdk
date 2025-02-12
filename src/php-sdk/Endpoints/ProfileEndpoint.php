@@ -1,14 +1,14 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
-use MR\SDK\Transport\Response;
+use Ensembl260\SDK\Transport\Response;
 
 class ProfileEndpoint extends Endpoint
 {
     public function get(string $id): Response
     {
-        return $this->request->get('/profiles/'.$id);
+        return $this->request->get('/profiles/' . $id);
     }
 
     public static function getBaseUri(): string

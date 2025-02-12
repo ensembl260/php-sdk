@@ -2,7 +2,7 @@
 
 namespace App\Tests\Auth;
 
-use MR\SDK\Client;
+use Ensembl260\SDK\Client;
 use PHPUnit\Framework\TestCase;
 
 class OAuthTest extends TestCase
@@ -16,8 +16,8 @@ class OAuthTest extends TestCase
         //     getenv('API_CLIENT_URL'),
         //     getenv('APP_SECRET'),
         //     getenv('API_CLIENT_ID'),
-        //     getenv('API_CLIENT_NAME')
         // );
+        //     getenv('API_CLIENT_NAME')
 
         // /** @var OAuth */
         // $isSaved = $this->mrClient->auth()->loginWithCredentials("user.d@ma-residence.fr", "password");

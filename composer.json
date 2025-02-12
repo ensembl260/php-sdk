@@ -1,5 +1,5 @@
 {
-    "name": "ma-residence/php-sdk",
+    "name": "ensembl260/php-sdk",
     "type": "library",
     "require": {
         "php": "8.*",
@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MR\\SDK\\": "src/php-sdk"
+            "Ensembl260\\SDK\\": "src/php-sdk"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\MR\\SDK\\": "tests"
+            "Tests\\Ensembl260\\SDK\\": "tests"
         }
     },
     "extra": {

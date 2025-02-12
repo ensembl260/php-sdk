@@ -1,8 +1,8 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
-use MR\SDK\Transport\Response;
+use Ensembl260\SDK\Transport\Response;
 
 class WidgetEndpoint extends Endpoint
 {
@@ -17,7 +17,7 @@ class WidgetEndpoint extends Endpoint
 
     public function allFromPlace(int $page = 1, int $perPage = 20, $place, array $extraParams = []): Response
     {
-        return $this->request->get('/widgets/activity/'.$place, array_merge([
+        return $this->request->get('/widgets/activity/' . $place, array_merge([
             'page' => $page,
             'per_page' => $perPage,
         ], $extraParams));

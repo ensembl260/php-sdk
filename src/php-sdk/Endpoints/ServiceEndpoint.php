@@ -1,8 +1,8 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
-use MR\SDK\Endpoints\Traits\ResourceTrait;
+use Ensembl260\SDK\Endpoints\Traits\ResourceTrait;
 
 class ServiceEndpoint extends Endpoint
 {

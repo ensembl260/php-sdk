@@ -1,11 +1,11 @@
 <?php
 
-namespace MR\SDK\Endpoints;
+namespace Ensembl260\SDK\Endpoints;
 
 class MeEndpoint extends Endpoint
 {
     /**
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function get()
     {
@@ -15,7 +15,7 @@ class MeEndpoint extends Endpoint
     /**
      * @param array $data
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function put(array $data = [])
     {
@@ -25,7 +25,7 @@ class MeEndpoint extends Endpoint
     /**
      * @param array $data
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function patch(array $data = [])
     {
@@ -35,7 +35,7 @@ class MeEndpoint extends Endpoint
     /**
      * @param array $data
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function delete(array $data = [])
     {
@@ -46,7 +46,7 @@ class MeEndpoint extends Endpoint
      * @param string $old
      * @param string $new
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function changePassword($old, $new)
     {
@@ -59,7 +59,7 @@ class MeEndpoint extends Endpoint
     /**
      * @param string $email
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function postEmail($email)
     {
@@ -71,32 +71,32 @@ class MeEndpoint extends Endpoint
     /**
      * @param string $emailId
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getEmail($emailId)
     {
-        return $this->request->get('/me/emails/'.$emailId);
+        return $this->request->get('/me/emails/' . $emailId);
     }
 
     /**
      * @param string $emailId
      * @param array  $data
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function deleteEmail($emailId, array $data = [])
     {
-        return $this->request->delete('/me/emails/'.$emailId, [], $data);
+        return $this->request->delete('/me/emails/' . $emailId, [], $data);
     }
 
     /**
      * @param string $type
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getMemberOf($type)
     {
-        return $this->request->get('/me/member-of/'.$type);
+        return $this->request->get('/me/member-of/' . $type);
     }
 
     /**
@@ -104,7 +104,7 @@ class MeEndpoint extends Endpoint
      * @param int   $perPage
      * @param array $extraParams
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getActivity($page = 1, $perPage = 20, array $extraParams = [])
     {
@@ -120,11 +120,11 @@ class MeEndpoint extends Endpoint
      * @param int   $perPage
      * @param array $extraParams
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getFollows($type, $page = 1, $perPage = 20, array $extraParams = [])
     {
-        return $this->request->get('/me/follows/'.$type, array_merge([
+        return $this->request->get('/me/follows/' . $type, array_merge([
             'page' => $page,
             'per_page' => $perPage,
         ], $extraParams));
@@ -135,7 +135,7 @@ class MeEndpoint extends Endpoint
      * @param int   $perPage
      * @param array $extraParams
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getFollowers($page = 1, $perPage = 20, array $extraParams = [])
     {
@@ -149,7 +149,7 @@ class MeEndpoint extends Endpoint
      * @param string $key
      * @param string $value
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function putSettings($key, $value)
     {
@@ -163,7 +163,7 @@ class MeEndpoint extends Endpoint
      * @param int   $perPage
      * @param array $extraParams
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getBookmarks($page = 1, $perPage = 20, array $extraParams = [])
     {
@@ -179,7 +179,7 @@ class MeEndpoint extends Endpoint
      * @param int   $perPage
      * @param array $extraParams
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getRecommendations($type = null, $page = 1, $perPage = 20, array $extraParams = [])
     {
@@ -191,7 +191,7 @@ class MeEndpoint extends Endpoint
     }
 
     /**
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getNotifications()
     {
@@ -199,7 +199,7 @@ class MeEndpoint extends Endpoint
     }
 
     /**
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getDevices()
     {
@@ -209,7 +209,7 @@ class MeEndpoint extends Endpoint
     /**
      * @param $id
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function deleteDevice($id)
     {
@@ -217,7 +217,7 @@ class MeEndpoint extends Endpoint
     }
 
     /**
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function postLendObject(array $data = [])
     {
@@ -228,11 +228,11 @@ class MeEndpoint extends Endpoint
      * @param string $id
      * @param array  $data
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function deleteLendObject($id, array $data = [])
     {
-        return $this->request->delete('/me/lend-objects/'.$id, [], $data);
+        return $this->request->delete('/me/lend-objects/' . $id, [], $data);
     }
 
     /**
@@ -240,7 +240,7 @@ class MeEndpoint extends Endpoint
      * @param int   $perPage
      * @param array $extraParams
      *
-     * @return \MR\SDK\Transport\Response
+     * @return \Ensembl260\SDK\Transport\Response
      */
     public function getServices(int $page = 1, int $perPage = 20, array $extraParams = [])
     {
