@@ -14,6 +14,22 @@ class NotificationEndpoint extends Endpoint
         ]);
     }
 
+    public function getActivityRecipients(string $senderUserId, string $groupId): Response
+    {
+        return $this->request->get('/notifications/valuation/helpers', [
+            'group_id' => $groupId,
+            'sender_id' => $senderUserId,
+        ]);
+    }
+
+    public function getHelperRecipients(string $senderUserId, string $groupId): Response
+    {
+        return $this->request->get('/notifications/valuation/helpers', [
+            'group_id' => $groupId,
+            'sender_id' => $senderUserId,
+        ]);
+    }
+
     public function getOpenTomorrow(int $page = 1, int $perPage = 100, array $extraParams = []): Response
     {
         return $this->request->get('/notifications/markets/open-tomorrow', array_merge([
