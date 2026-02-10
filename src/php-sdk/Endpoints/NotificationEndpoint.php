@@ -14,6 +14,42 @@ class NotificationEndpoint extends Endpoint
         ]);
     }
 
+    public function getValuationActivityRecipients(string $groupId): Response
+    {
+        return $this->request->get('/notifications/valuation/activities', [
+            'group_id' => $groupId,
+        ]);
+    }
+
+    public function getValuationHelperRecipients(string $groupId): Response
+    {
+        return $this->request->get('/notifications/valuation/helpers', [
+            'group_id' => $groupId,
+        ]);
+    }
+
+    public function getValuationBadgeRecipients(string $groupId, string $badgeId): Response
+    {
+        return $this->request->get('/notifications/valuation/badges', [
+            'group_id' => $groupId,
+            'badge_id' => $badgeId,
+        ]);
+    }
+
+    public function getValuationParticipationRecipients(string $groupId): Response
+    {
+        return $this->request->get('/notifications/valuation/participation', [
+            'group_id' => $groupId,
+        ]);
+    }
+
+    public function getValuationNeederRecipients(string $groupId): Response
+    {
+        return $this->request->get('/notifications/valuation/needers', [
+            'group_id' => $groupId,
+        ]);
+    }
+
     public function getOpenTomorrow(int $page = 1, int $perPage = 100, array $extraParams = []): Response
     {
         return $this->request->get('/notifications/markets/open-tomorrow', array_merge([
